@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GuiTuner
+Comment=Simple guitar tuning program
+Comment[pl]=Program do strojenia gitary
+Icon=guituner_ico.xpm
+Exec=guituner
+Terminal=false
+Type=Application
+Categories=GTK;Audio;
+Encoding=UTF-8
+# vi: encoding=utf-8
