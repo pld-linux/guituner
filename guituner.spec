@@ -1,7 +1,7 @@
 #TODO:
 # .desktop file
-Summary:	GuiTuner is a simple guitar tuning program
-Summary(pl):	Program do strojenia gitary
+Summary:	GuiTuner - a simple guitar tuning program
+Summary(pl):	GuiTuner - program do strojenia gitary
 Name:		guituner
 Version:	0.02
 Release:	1
@@ -19,7 +19,7 @@ BuildRequires:	glib-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
-BuildRequires:	libart_lgpl
+BuildRequires:	libart_lgpl-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GuiTuner is a simple guitar tuning program.
 
 %description -l pl
-Program do strojenia gitary.
+GuiTuner to prosty program do strojenia gitary.
 
 %prep
 %setup -q -n %{name}_%{version}
