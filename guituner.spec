@@ -1,5 +1,3 @@
-#TODO:
-# .desktop file
 Summary:	GuiTuner - a simple guitar tuning program
 Summary(pl):	GuiTuner - program do strojenia gitary
 Name:		guituner
@@ -9,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://digilander.libero.it/guituner/downloads/%{name}_%{version}.tar.gz
 # Source0-md5:	aa071f1250aaaaa0068c839bdcd34445
+Source1:        %{name}.desktop
 URL:		http://digilander.libero.it/guituner
 BuildRequires:	audiofile-devel
 BuildRequires:	autoconf
@@ -46,6 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,3 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS CREDITS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
+%{_desktopdir}/*
