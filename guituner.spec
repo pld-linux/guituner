@@ -8,7 +8,7 @@ Group:		X11/Applications/Multimedia
 Source0:	http://digilander.libero.it/guituner/downloads/%{name}_%{version}.tar.gz
 # Source0-md5:	aa071f1250aaaaa0068c839bdcd34445
 Source1:        %{name}.desktop
-URL:		http://digilander.libero.it/guituner
+URL:		http://digilander.libero.it/guituner/
 BuildRequires:	audiofile-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -42,10 +42,11 @@ GuiTuner to prosty program do strojenia gitary.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_desktopdir}
+
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
