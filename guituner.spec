@@ -3,7 +3,7 @@ Summary(pl):	GuiTuner - program do strojenia gitary
 Name:		guituner
 Version:	0.02
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://digilander.libero.it/guituner/downloads/%{name}_%{version}.tar.gz
 # Source0-md5:	aa071f1250aaaaa0068c839bdcd34445
