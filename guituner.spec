@@ -1,5 +1,5 @@
 Summary:	GuiTuner - a simple guitar tuning program
-Summary(pl):	GuiTuner - program do strojenia gitary
+Summary(pl.UTF-8):   GuiTuner - program do strojenia gitary
 Name:		guituner
 Version:	0.02
 Release:	1
@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GuiTuner is a simple guitar tuning program.
 
-%description -l pl
+%description -l pl.UTF-8
 GuiTuner to prosty program do strojenia gitary.
 
 %prep
